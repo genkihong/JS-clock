@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+header, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, header, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #293B29;
+}
+
+.clock {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/clock-bg.svg);
+}
+
+.second-hand {
+  position: absolute;
+  top: 49.5%;
+  left: 49%;
+  width: 12px;
+  height: 126px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background-image: url(../images/second-hand.svg);
+}
+
+.min-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 49.5%;
+  width: 8px;
+  height: 96px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  background-image: url(../images/minute-hand.svg);
+  z-index: 1;
+}
+
+.hour-hand {
+  position: absolute;
+  bottom: 49.5%;
+  left: 50%;
+  width: 72px;
+  height: 8px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-image: url(../images/hour-hand.svg);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+body {  
+  display: flex;  
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #293B29;
+}
+.clock{
+  position: relative;
+  height: 600px;
+  width: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/clock-bg.svg);
+}
+.second-hand{
+  position: absolute;
+  top: 49.5%;
+  left: 49%;
+  width: 12px;
+  height: 126px;  
+  transform-origin: top;
+  background-image: url(../images/second-hand.svg);
+}
+.min-hand{
+  position: absolute;
+  bottom: 50%;
+  left: 49.5%;
+  width: 8px;
+  height: 96px;
+  transform-origin: bottom;
+  background-image: url(../images/minute-hand.svg);
+  z-index: 1;
+}
+.hour-hand{
+  position: absolute;
+  bottom: 49.5%;
+  left: 50%;
+  width: 72px;
+  height: 8px;
+  transform-origin: left;
+  background-image: url(../images/hour-hand.svg);
+}
